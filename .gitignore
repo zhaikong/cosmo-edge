@@ -1,6 +1,5 @@
 .history
 .DS_Store
-.vscode
 .agent
 .antigravitycli
 .claude
@@ -396,7 +395,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -559,3 +557,4 @@ test/video/demo.mp4
 
 # PR automation scratch
 _pr_meta.json
+config.bat
