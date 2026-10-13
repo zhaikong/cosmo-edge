@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "./build.sh; rollup -c",
+    "build": "node init && ./build.sh; rollup -c",
     "lint": "npx eslint ."
   },
   "files": [

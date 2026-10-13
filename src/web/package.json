@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "i18n:check-scopes": "node scripts/i18n_check_scopes.mjs",
     "i18n:check-locales": "node scripts/i18n_check_locales.mjs",
     "i18n:check-glossary": "node scripts/i18n_check_glossary_sync.mjs",
@@ -25,7 +25,7 @@
     "gb28181-access:check": "node --experimental-vm-modules --test scripts/gb28181_dialog_check.mjs",
     "network-validation:check": "node scripts/network_validation_check.mjs",
     "prebuild": "npm run api-contract:check && npm run request-behavior:check && npm run network-validation:check && npm run upgrade-package:check && npm run route-query:check && npm run device-info:check && npm run mqtt-port-validation:check && npm run linkage-flow:check && npm run linkage-form:check && npm run task-param-ownership:check && npm run component-behavior:check && npm run visual-review:check && npm run visual-questions:check && npm run graph-edges:check && npm run target-geometry:check && npm run onvif-access:check && npm run gb28181-access:check && npm run i18n:check",
-    "build": "vite build",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "resource-i18n:check": "node scripts/resource_i18n_sync.mjs --check",
     "resource-i18n:sync": "node scripts/resource_i18n_sync.mjs --sync",
